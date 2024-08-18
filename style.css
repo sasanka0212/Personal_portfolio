@@ -27,10 +27,24 @@ body{
 }
 
 nav{
+    /*
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #333;
+    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 100px;
+    z-index: 100000;
+    background: #ababab;
 }
 
 .logo{
@@ -44,10 +58,24 @@ nav ul li{
 }
 
 nav ul li a{
+    /*
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    */
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+/*removable*/
+nav.sticky ul li a{
+    color: #000;
 }
 
 nav ul li a::after{
