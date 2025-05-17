@@ -1,5 +1,6 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName('tab-contents');
+var closeMenu = document.getElementsByClassName('fa-solid fa-xmark');
 
 function opentab(tabname) {
     for(tablink of tablinks) {

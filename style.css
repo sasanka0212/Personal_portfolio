@@ -427,6 +427,7 @@ nav .fa-solid{
         background: #ff004f;
         position: fixed;
         top: 0;
+        float: right;
         right: -200px;
         width: 200px;
         height: 100vh;
@@ -438,6 +439,10 @@ nav .fa-solid{
     nav ul li{
         display: block;
         margin: 25px;
+    }
+
+    nav i{
+       right: 100px;
     }
 
     nav ul .fa-solid{
